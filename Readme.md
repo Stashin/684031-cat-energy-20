@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Олег Парамзин](https://up.htmlacademy.ru/adaptive/20/user/684031).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Бервяченок](https://htmlacademy.ru/profile/jackson).
 
 ---
 
