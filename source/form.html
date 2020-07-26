@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
-<body>
+<body class="page-body">
   <header class="page-header">
     <a href="#" class="page-header__logo">
       <img src="#" alt="Кэт энерджи">
@@ -33,7 +33,7 @@
 
   <main class="page-main">
     <section class="page-info">
-      <h2 class="page-info__title">Подбор программы</h2>
+      <h2 class="page-info__title page__title">Подбор программы</h2>
     </section>
     <section class="forms">
       <h3 class="visually-hidden">Анкета клиента</h3>
@@ -57,7 +57,7 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="select-program">
+          <fieldset class="forms__select-program select-program">
             <ul class="select-program__list">
               <li class="select-program__item">
                 <input class="select-program__input" type="radio" name="select-program" value="select-program__slim"
@@ -77,7 +77,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="communications">
+          <fieldset class="forms__communications communications">
             <p class="communication__title">Контактные данные (владельца кота)</p>
             <div class="communication__mail">
               <label class="communication__label" for="user-mail">E-mail:<sup>*</sup></label>
@@ -90,12 +90,12 @@
                 id="user-phone">
             </div>
           </fieldset>
-          <fieldset class="habits">
+          <fieldset class="forms__habits habits">
             <legend class="habits__title">Комментарий</legend>
             <textarea class="habits__text" name="habits__text"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
-          <fieldset class="select-add">
+          <fieldset class="forms__select-add select-add">
             <p class="select-add__title">Дополнительно</p>
             <ul class="select-add__list">
               <li class="select-add__item">
@@ -116,6 +116,10 @@
               </li>
             </ul>
           </fieldset>
+          <div class="forms__submit submit">
+            <button class="submit__button" type="submit">Отправить форму</button>
+            <p class="submit__text-condition"><sup>*</sup> — обязательные поля</p>
+          </div>
         </form>
       </div>
     </section>
