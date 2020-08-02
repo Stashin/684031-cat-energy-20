@@ -1,0 +1,63 @@
+.example {
+  background-color: #EAEAEA;
+}
+
+.example__wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.example__title {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 19px;
+}
+
+.example__text {
+  color: #444444;
+}
+
+.example__number {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.example__description {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+}
+
+.example__price {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__before-after {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
