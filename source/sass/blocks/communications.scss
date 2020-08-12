@@ -1,0 +1,36 @@
+.communications {
+  border: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0;
+}
+
+.communication__title {
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+  margin: 0;
+}
+
+.communication__label {
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-right: 12px;
+}
+
+.communication__input {
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  padding-top: 13px;
+  padding-bottom: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #E7E7E7;
+}
