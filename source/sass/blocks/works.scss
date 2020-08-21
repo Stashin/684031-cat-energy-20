@@ -1,14 +1,12 @@
 .works {
   background-color: #ffffff;
-}
-
-.works__wrapper {
-  margin-left: 20px;
-  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .works__list {
-  margin-bottom: 46px;
+  margin-bottom: 20px;
 }
 
 .works__title {

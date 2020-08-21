@@ -11,7 +11,10 @@
 <body class="page-body">
   <header class="page-header">
     <a href="#" class="page-header__logo">
-      <img src="#" alt="Кэт энерджи">
+      <!-- <img src="#" alt="Кэт энерджи"> -->
+      <svg width="190px" height="37.61px">
+        <use xlink:href="img/sprite.svg#logo-mobile"></use>
+      </svg>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -44,7 +47,7 @@
         <a href="form.html" class="intro-index__button button">подобрать программу</a>
       </div>
     </section>
-    <section class="program">
+    <section class="program container">
       <ul class="program__list">
         <li class="program__item">
           <h4 class="program__title">похудение</h4>
@@ -60,33 +63,31 @@
         </li>
       </ul>
     </section>
-    <section class="works">
-      <div class="works__wrapper">
-        <h3 class="works__title">Как это работает</h3>
-        <ul class="works__list">
-          <li class="works__item">
-            <p class="works__description works__description--natural">Функциональное питание содержит только полезные
-              питательные вещества.</p>
-          </li>
-          <li class="works__item">
-            <p class="works__description works__description--flour">Выпускается в виде порошка, который нужно лишь
-              залить
-              кипятком и готово.</p>
-          </li>
-          <li class="works__item">
-            <p class="works__description works__description--substitution">Замените один-два приема обычной еды на наше
-              функциональное питание.</p>
-          </li>
-          <li class="works__item">
-            <p class="works__description works__description--changes">Уже через месяц наслаждайтесь изменениями к
-              лучшему
-              вашего питомца!</p>
-          </li>
-        </ul>
-      </div>
+    <section class="works container">
+      <h3 class="works__title">Как это работает</h3>
+      <ul class="works__list">
+        <li class="works__item">
+          <p class="works__description works__description--natural">Функциональное питание содержит только полезные
+            питательные вещества.</p>
+        </li>
+        <li class="works__item">
+          <p class="works__description works__description--flour">Выпускается в виде порошка, который нужно лишь
+            залить
+            кипятком и готово.</p>
+        </li>
+        <li class="works__item">
+          <p class="works__description works__description--substitution">Замените один-два приема обычной еды на наше
+            функциональное питание.</p>
+        </li>
+        <li class="works__item">
+          <p class="works__description works__description--changes">Уже через месяц наслаждайтесь изменениями к
+            лучшему
+            вашего питомца!</p>
+        </li>
+      </ul>
     </section>
     <section class="example">
-      <div class="example__wrapper">
+      <div class="example__wrapper container">
         <h3 class="example__title">Живой пример</h3>
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
           Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
@@ -112,22 +113,26 @@
     </section>
   </main>
   <footer class="page-footer">
-    <section class="contacts">
-      <div class="contacts__wrapper">
-        <h4 class="contacts__title">приглашаем к сотрудничеству дилеров!</h4>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      </div>
+    <section class="contacts container">
+      <h4 class="contacts__title">приглашаем<br> к сотрудничеству дилеров!</h4>
+      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </section>
     <section class="map"></section>
     <a href="#" class="logo-footer">
-      <img src="#" alt="Логотип кэт энерджи" class="logo-footer__link">
+      <!-- <img src="#" alt="Логотип кэт энерджи" class="logo-footer__link"> -->
+      <svg class="logo-footer__link" width="128px" height="24px">
+        <use xlink:href="img/sprite.svg#logo-footer"></use>
+      </svg>
     </a>
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--vk">
             <span class="visually-hidden">Ссылка на группу в вк</span>
-            <img src="№" alt="Логотип Вк">
+            <!-- <img src="№" alt="Логотип Вк"> -->
+            <svg class="logo-footer__link" width="23px" height="16px">
+              <use xlink:href="img/sprite.svg#icon-vk"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
@@ -140,6 +145,9 @@
           <a class="social__link social__link--fb">
             <span class="visually-hidden">Ссылка на facebook</span>
             <img src="#" alt="Логотип facebook">
+            <!-- <svg class="logo-footer__link" width="128px" height="24px">
+              <use xlink:href="img/sprite.svg#logo-footer"></use>
+            </svg> -->
           </a>
         </li>
       </ul>

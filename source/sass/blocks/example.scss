@@ -3,8 +3,7 @@
 }
 
 .example__wrapper {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 auto;
 }
 
 .example__title {
@@ -21,6 +20,22 @@
 
 .example__text {
   color: #444444;
+  width: 266px;
+  margin-bottom: 25px;
+}
+
+.example__list {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.example__item {
+  width: 124px;
+  width: 124px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .example__number {
@@ -32,6 +47,7 @@
   color: #000000;
   text-transform: uppercase;
   margin: 0;
+  padding-top: 14px;
 }
 
 .example__description {
@@ -41,6 +57,9 @@
   font-size: 12px;
   line-height: 12px;
   color: #444444;
+  margin: 0;
+  padding-top: 10px;
+  width: 55px;
 }
 
 .example__price {
@@ -51,6 +70,20 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 18px;
+  margin-bottom: 289px;
+}
+
+.example__slide {
+  display: flex;
+  width: 197px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-bottom: 35px;
+}
+
+.example__slide p {
+  margin: 0;
 }
 
 .example__before-after {

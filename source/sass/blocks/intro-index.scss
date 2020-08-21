@@ -4,18 +4,28 @@
   line-height: 36px;
   text-align: center;
   color: #FFFFFF;
+  margin-bottom: 22px;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: 100% 305px;
 }
 
 .intro-index__wrapper {
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .intro-index__box {
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-position: center 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 127px;
+  margin-bottom: 135px;
+}
+
+.intro-index__button {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  width: 280px;
 }
 
 .intro-index__title {
@@ -27,6 +37,7 @@
   line-height: 36px;
   text-align: center;
   color: #ffffff;
+  width: 250px;
 }
 
 .intro-index__slogan {
