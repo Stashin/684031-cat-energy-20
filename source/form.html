@@ -9,9 +9,11 @@
 </head>
 
 <body class="page-body">
-  <header class="page-header">
+  <header class="page-header container">
     <a href="#" class="page-header__logo">
-      <img src="#" alt="Кэт энерджи">
+      <svg width="190px" height="37.61px">
+        <use xlink:href="img/sprite.svg#logo-mobile"></use>
+      </svg>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -34,53 +36,59 @@
   </header>
 
   <main class="page-main">
-    <section class="page-info">
+    <section class="page-info container">
       <h2 class="page-info__title page__title">Подбор программы</h2>
     </section>
     <section class="forms">
       <h3 class="visually-hidden">Анкета клиента</h3>
-      <p class="forms__slogan">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <div class="forms__box container">
+        <p class="forms__slogan">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      </div>
       <div class="forms__wrapper">
         <form action="https://echo.htmlacademy.ru" class="forms__profile">
-          <fieldset class="forms__cat-data cat-data">
-            <div class="cat-data__wrapper">
-              <div class="cat-data__name">
-                <label class="cat-data__label" for="cat-data__firstname">Имя:<sup>*</sup></label>
-                <input class="cat-data__input" type="text" name="firstname" placeholder="БАРСИК"
-                  id="cat-data__firstname">
+          <div class="forms__box">
+            <fieldset class="forms__cat-data cat-data">
+              <div class="cat-data__wrapper">
+                <div class="cat-data__name">
+                  <label class="cat-data__label" for="cat-data__firstname">Имя:<sup>*</sup></label>
+                  <input class="cat-data__input" type="text" name="firstname" placeholder="БАРСИК"
+                    id="cat-data__firstname">
+                </div>
+                <div class="cat-data__cat-wt">
+                  <label class="cat-data__label" for="cat-data__weight">Вес (кг):<sup>*</sup></label>
+                  <input class="cat-data__input" type="text" name="weight" placeholder="7" id="cat-data__weight">
+                </div>
+                <div class="cat-data__cat-age">
+                  <label class="cat-data__label" for="cat-data__age">Возраст (лет):</label>
+                  <input class="cat-data__input" type="text" name="age" placeholder="7" id="cat-data__age">
+                </div>
               </div>
-              <div class="cat-data__cat-wt">
-                <label class="cat-data__label" for="cat-data__weight">Вес (кг):<sup>*</sup></label>
-                <input class="cat-data__input" type="text" name="weight" placeholder="7" id="cat-data__weight">
-              </div>
-              <div class="cat-data__cat-age">
-                <label class="cat-data__label" for="cat-data__age">Возраст (лет):</label>
-                <input class="cat-data__input" type="text" name="age" placeholder="7" id="cat-data__age">
-              </div>
-            </div>
-          </fieldset>
-          <fieldset class="forms__select-program select-program">
-            <ul class="select-program__list">
-              <li class="select-program__item">
-                <input class="select-program__input" type="radio" name="select-program" value="select-program__slim"
-                  id="select-program__slim" checked="">
-                <label class="select-program__label" for="select-program__slim">похудение</label>
-              </li>
-              <li class="select-program__item">
-                <input class="select-program__input" type="radio" name="select-program" value="select-program__wt"
-                  id="select-program__wt">
-                <label class="select-program__label" for="select-program__wt">набор массы</label>
-              </li>
-              <li class="select-program__item">
-                <input class="select-program__input" type="radio" name="select-program"
-                  value="select-program__recommendation" id="select-program__recommendation">
-                <label class="select-program__label" for="select-program__recommendation">Не знаю (Нужен ваш
-                  совет)</label>
-              </li>
-            </ul>
-          </fieldset>
+            </fieldset>
+            <fieldset class="forms__select-program select-program">
+              <ul class="select-program__list container">
+                <li class="select-program__item">
+                  <input class="select-program__input" type="radio" name="select-program" value="select-program__slim"
+                    id="select-program__slim" checked="">
+                  <label class="select-program__label" for="select-program__slim">похудение</label>
+                </li>
+                <li class="select-program__item">
+                  <input class="select-program__input" type="radio" name="select-program" value="select-program__wt"
+                    id="select-program__wt">
+                  <label class="select-program__label" for="select-program__wt">набор массы</label>
+                </li>
+                <li class="select-program__item">
+                  <input class="select-program__input" type="radio" name="select-program"
+                    value="select-program__recommendation" id="select-program__recommendation">
+                  <label class="select-program__label" for="select-program__recommendation">Не знаю (Нужен ваш
+                    совет)</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="forms__communications communications">
-            <p class="communication__title">Контактные данные (владельца кота)</p>
+            <div class="communications__box container">
+              <p class="communication__title">Контактные данные (владельца кота)</p>
+            </div>
             <div class="communication__mail">
               <label class="communication__label" for="user-mail">E-mail:<sup>*</sup></label>
               <input class="communication__input" type="email" name="mail" placeholder="kuklachev@gmail.com"
@@ -119,48 +127,61 @@
             </ul>
           </fieldset>
           <div class="forms__submit submit">
-            <button class="submit__button" type="submit">Отправить форму</button>
-            <p class="submit__text-condition"><sup>*</sup> — обязательные поля</p>
+            <button class="submit__button" type="submit">Отправить заявку</button>
+            <p class="submit__text-condition">* — Обязательные поля</p>
           </div>
         </form>
       </div>
     </section>
   </main>
   <footer class="page-footer">
-    <section class="contacts">
-      <div class="contacts__wrapper">
-        <h4 class="contacts__title">приглашаем к сотрудничеству дилеров!</h4>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <section class="contacts container">
+      <h4 class="contacts__title">приглашаем<br> к сотрудничеству дилеров!</h4>
+      <div class="contacts__address address">
+        <p class="address__street">ул. Большая Конюшенная, д. 19/8</p>
+        <p class="address__city">Санкт-Петербург</p>
       </div>
     </section>
     <section class="map"></section>
-    <a href="#" class="logo-footer">
-      <img src="#" alt="Логотип кэт энерджи" class="logo-footer__link">
-    </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vk">
-            <span class="visually-hidden">Ссылка на группу в вк</span>
-            <img src="№" alt="Логотип Вк">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--inst">
-            <span class="visually-hidden">Ссылка на инстаграм</span>
-            <img src="#" alt="Логотип instagram">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--fb">
-            <span class="visually-hidden">Ссылка на facebook</span>
-            <img src="#" alt="Логотип facebook">
-          </a>
-        </li>
-      </ul>
+    <div class="page-footer__wrapper container">
+      <a href="#" class="page-footer__logo">
+        <svg class="logo-footer__link" width="128px" height="24px">
+          <use xlink:href="img/sprite.svg#logo-footer"></use>
+        </svg>
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vk">
+              <span class="visually-hidden">Ссылка на группу в вк</span>
+              <svg class="logo-footer__link" width="23px" height="16px">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--inst">
+              <span class="visually-hidden">Ссылка на инстаграм</span>
+              <svg class="logo-footer__link" width="16px" height="16px">
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--fb">
+              <span class="visually-hidden">Ссылка на facebook</span>
+              <svg class="logo-footer__link" width="22px" height="22px">
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__developers developers">
         <p class="developers__text">HTML Academy</p>
-        <svg class="developers__logo-image" width="#" height="#"></svg>
+        <svg class="developers__logo-image" width="27px" height="34px">
+          <use xlink:href="img/sprite.svg#htmlacademy"></use>
+        </svg>
       </a>
     </div>
   </footer>

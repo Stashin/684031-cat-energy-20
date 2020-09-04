@@ -3,6 +3,10 @@
   margin-left: 20px;
   margin-right: 20px;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto 17px auto;
 }
 
 .select-add__title {
@@ -10,11 +14,13 @@
   font-size: 24px;
   line-height: 26px;
   color: #000000;
-  margin-bottom: 34px;
+  margin-bottom: 40px;
+  margin-top: 0;
 }
 
 .select-add__item {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+  padding-left: 28px;
 }
 
 .select-add__label {
@@ -24,4 +30,36 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .select-add {
+    width: 630px;
+    margin-bottom: 16px;
+  }
+
+  .select-add__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 63px;
+  }
+
+  .select-add__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .select-add__item {
+    width: 46%;
+    box-sizing: border-box;
+    padding: 0;
+    margin-bottom: 41px;
+  }
+
+  .select-add__label {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 44px;
+  }
 }

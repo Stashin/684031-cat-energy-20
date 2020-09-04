@@ -1,8 +1,14 @@
 .communications {
   border: none;
-  margin-left: 20px;
-  margin-right: 20px;
   padding: 0;
+  margin-top: 26px;
+  margin-bottom: 27px;
+}
+
+.communications__box {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 32px;
 }
 
 .communication__title {
@@ -13,11 +19,28 @@
   margin: 0;
 }
 
+.communication__mail {
+  align-items: center;
+  display: flex;
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto 14px auto;
+}
+
+.communication__phone {
+  align-items: center;
+  display: flex;
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .communication__label {
   font-family: Oswald, Arial, sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   margin-right: 12px;
+  width: 64px;
 }
 
 .communication__input {
@@ -27,10 +50,78 @@
   text-transform: uppercase;
   color: #444444;
   padding-top: 13px;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
   padding-left: 14px;
   padding-right: 14px;
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #E7E7E7;
+}
+
+@media (min-width: $tablet-width) {
+  .communications {
+    margin-top: 75px;
+    margin-bottom: 65px;
+  }
+
+  .communications__box {
+    width: 630px;
+    margin-bottom: 76px;
+  }
+
+  .communication__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .communication__mail {
+    width: 630px;
+    margin-bottom: 20px;
+  }
+
+  .communication__label {
+    font-size: 20px;
+    line-height: 30px;
+    width: 82px;
+  }
+
+  .communication__input {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 21px;
+    padding-right: 47px;
+  }
+
+  .communication__phone {
+    width: 630px;
+  }
+
+  .communication__phone label {
+    width: 104px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .communications {
+    margin-top: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .communications__box {
+    width: 1220px;
+  }
+
+  .communication__mail {
+    width: 569px;
+    margin: 0;
+  }
+
+  .communication__phone {
+    width: 569px;
+    margin: 0;
+  }
 }

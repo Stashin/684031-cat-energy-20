@@ -1,5 +1,5 @@
 .submit {
-  margin: 0 20px;
+  margin-bottom: 32px;
 }
 
 .submit__button {
@@ -14,7 +14,10 @@
   font-size: 16px;
   color: #ffffff;
   border: none;
-  width: 100%;
+  width: 280px;
+  margin: 0 auto 21px auto;
+  padding-top: 12px;
+  padding-bottom: 10px;
 }
 
 .submit__text-condition {
@@ -22,4 +25,31 @@
   font-size: 14px;
   line-height: 16px;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .submit {
+    width: 630px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 72px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .submit__button {
+    margin: 0;
+    width: 45%;
+    font-size: 20px;
+    padding-top: 18px;
+    padding-bottom: 16px;
+  }
+
+  .submit__text-condition {
+    width: 45%;
+    text-align: left;
+    font-size: 16px;
+  }
 }

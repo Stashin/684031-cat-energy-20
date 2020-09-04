@@ -1,8 +1,29 @@
+.page-info {
+  margin: 0 auto;
+}
+
 .page-info__title {
   font-family: Oswald, Arial, sans-serif;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
-  margin: 0 0 37px 20px;
+  margin-top: 27px;
+  margin-bottom: 38px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-info__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 51px;
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-info__title {
+    margin-top: 80px;
+    margin-bottom: 56px;
+  }
 }

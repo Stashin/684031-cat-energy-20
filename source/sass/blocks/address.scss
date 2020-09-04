@@ -1,0 +1,36 @@
+.address {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  width: 140px;
+  color: #444444;
+}
+
+.address__street {
+  margin: 0;
+}
+
+.address__city {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .address {
+    font-size: 16px;
+    text-align: right;
+    width: 163px;
+  }
+
+  .address__street {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .address {
+    text-align: left;
+  }
+}

@@ -1,7 +1,22 @@
+.developers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .developers__text {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .developers__text {
+    padding: 0;
+  }
 }

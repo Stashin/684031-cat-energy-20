@@ -1,8 +1,3 @@
-.products-more__wrapper {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
 .products-more__title {
   font-family: Oswald, Arial, sans-serif;
   font-style: normal;
@@ -12,6 +7,8 @@
   text-align: center;
   text-transform: uppercase;
   color: #111111;
+  margin-top: 80px;
+  margin-bottom: 7px;
 }
 
 .products-more__subtitle {
@@ -21,16 +18,59 @@
   line-height: 16px;
   text-align: center;
   color: #444444;
+  margin-top: 0;
+  margin-bottom: 21px;
 }
 
 .products-more__btn {
   background-color: #f2f2f2;
-  font-family: Oswald, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 0px;
   text-align: center;
-  text-transform: uppercase;
   color: #444444;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+@media (min-width: $tablet-width) {
+  .products-more {
+    background-color: #FFFFFF;
+    border: 2px solid #F2F2F2;
+    box-sizing: border-box;
+  }
+  .products-more__title {
+    margin-top: 163px;
+    font-size: 20px;
+    line-height: 22px;
+    width: 166px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 23px;
+  }
+
+  .products-more__subtitle {
+    font-size: 16px;
+    line-height: 18px;
+    width: 178px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 87px;
+  }
+
+  .products-more__btn {
+    width: 248px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products-more__title {
+    margin-top: 160px;
+  }
+
+  .products-more__btn {
+    width: 168px;
+  }
 }

@@ -1,6 +1,22 @@
+.product {
+  border-bottom: 1px solid #EBEBEB;
+  padding-bottom: 24px;
+}
+
 .product__wrapper {
-  margin-left: 20px;
-  margin-right: 20px;
+  display: flex;
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.product__link {
+  width: 50%;
+  height: 144px;
+}
+
+.product__description {
+  width: 50%;
 }
 
 .product__name {
@@ -11,18 +27,32 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #222222;
+  width: 76px;
+  margin-bottom: 14px;
+  margin-top: 21px;
+}
+
+.product__list {
+  width: 100%;
 }
 
 .product__item {
   color: #444444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .product__parameter {
   margin: 0;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .product__property {
   margin: 0;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .product__btn {
@@ -31,4 +61,75 @@
   font-weight: normal;
   font-size: 16px;
   color: #ffffff;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    width: 324px;
+    background-color: #F2F2F2;
+    border-bottom: none;
+    margin-top: 140px;
+    padding-bottom: 40px;
+  }
+
+  .product__wrapper {
+    flex-direction: column;
+    align-items: center;
+    width: 248px;
+    margin-bottom: 34px;
+  }
+
+  .product__description {
+    width: 100%;
+  }
+
+  .product__name {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    width: 141px;
+    margin-top: 18px;
+    margin-right: auto;
+    margin-bottom: 14px;
+    margin-left: auto;
+  }
+
+  .product__item {
+    border-bottom: 1px solid #CDCDCD;
+    padding-bottom: 7px;
+    padding-top: 7px;
+  }
+
+  .product__parameter {
+    font-size: 16px;
+  }
+
+  .product__property {
+    font-size: 16px;
+  }
+
+  .product__btn {
+    width: 248px;
+    padding-top: 11px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    width: 245px;
+    margin-top: 143px;
+    padding-bottom: 41px;
+  }
+
+  .product__wrapper {
+    width: 170px;
+  }
+
+  .product__btn {
+    width: 168px;
+  }
 }

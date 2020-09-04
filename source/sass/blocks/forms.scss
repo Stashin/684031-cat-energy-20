@@ -1,8 +1,39 @@
+.forms {
+  margin: 0 auto;
+}
+
+.forms__box {
+  margin: 0 auto;
+}
+
 .forms__slogan {
-  margin-left: 20px;
   margin-top: 0;
-  margin-bottom: 39px;
+  margin-bottom: 38px;
   font-family: Oswald, Arial, sans-serif;
   font-weight: normal;
   color: #000000;
+  text-transform: uppercase;
+  width: 226px;
+}
+
+@media (min-width: $tablet-width) {
+  .forms__slogan {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 40px;
+    width: 330px;
+    margin-bottom: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .forms__slogan {
+    padding-left: 0;
+  }
+
+  .forms__box {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+  }
 }

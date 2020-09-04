@@ -3,3 +3,36 @@
   flex-direction: column;
   text-align: center;
 }
+
+.site-list__item {
+  padding-top: 22px;
+  padding-bottom: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .site-list__item {
+    padding-top: 42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 70px;
+    padding-bottom: 5px;
+  }
+
+  .site-list__item--active {
+    border-bottom: 2px solid #68B738;
+  }
+
+  .site-list__item--active-index {
+    border-bottom: 2px solid #FFFFFF;
+  }
+}

@@ -7,3 +7,26 @@
   text-transform: uppercase;
   color: #000000;
 }
+
+.main-nav__toggle {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 440px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav{
+    width: 479px;
+  }
+
+  .main-nav__index {
+    color: #FFFFFF;
+  }
+}
